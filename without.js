@@ -20,7 +20,7 @@ const without = (source, itemsToRemove) => {
       newArray.push(element);
     }
   }
-  console.log(newArray);
+  return newArray;
 } 
 without([1, 2, 3], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
