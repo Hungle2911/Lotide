@@ -13,17 +13,18 @@ const assertArraysEqual = (a, b) => {
   if (eqArrays(a, b) === false) console.log(`Assertion Failed: ${a} !== ${b}`);
   else console.log(`Assertion Passed: ${a} === ${b}`);
 };
-const flatten = (arr) => {
-  let result = [];
-  for (const element of arr) {
-    if (Array.isArray(element)) {
-      // If the element is an array, recursively flatten it
-      result = result.concat(flatten(element));
-    } else {
-      // If the element is not an array, add it to the result
-      result.push(element);
-    }
+// Middle function
+const middle = (arr) => {
+  let result = []
+  if (arr.length <= 2) {
+    return result
+  } else if (arr.length % 2 !== 0) {
+    result.push(arr[(arr.length - 1) / 2])
+    return result
+  } else {
+    result.push(arr[(arr.length / 2) - 1])
+    result.push(arr[(arr.length / 2)])
+    return result
   }
-
-  return result;
 }
+console.log(middle([1, 2, 3, 4, 5]))
