@@ -15,7 +15,8 @@ const countLetters = (sentence) => {
 }
   return result
 }
-console.log(countLetters('sentences'));
-const result = countLetters('Lighthouse Labs');
-assertEqual(result['L'], 2);
-assertEqual(result['i'], 1);
+module.exports = countLetters
+// console.log(countLetters('sentences'));
+// const result = countLetters('Lighthouse Labs');
+// assertEqual(result['L'], 2);
+// assertEqual(result['i'], 1);

@@ -22,4 +22,9 @@ describe("#tail", () => {
   it("tail of an empty array should also be empty", () => {
     assert.strictEqual(tail([]).length, 0);
   });
+  it("make sure the original array was not altered by the tail function", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(words);
+    assert.strictEqual(words.length, 3);
+  });
 });
