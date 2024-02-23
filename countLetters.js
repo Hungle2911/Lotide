@@ -16,7 +16,3 @@ const countLetters = (sentence) => {
   return result
 }
 module.exports = countLetters
-// console.log(countLetters('sentences'));
-// const result = countLetters('Lighthouse Labs');
-// assertEqual(result['L'], 2);
-// assertEqual(result['i'], 1);

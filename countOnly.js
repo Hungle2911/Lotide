@@ -1,9 +1,3 @@
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-//   } else
-//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected} `);
-// };
 // countOnly 
 const countOnly = function(allItems, itemsToCount) {
   const result = {};
@@ -16,16 +10,3 @@ const countOnly = function(allItems, itemsToCount) {
   return result;
 };
 module.exports = countOnly
-// // Testing
-// const firstNames = [
-//   "Karl",
-//   "Salima",
-//   "Agouhanna",
-//   "Fang",
-//   "Kavith",
-//   "Jason",
-//   "Salima",
-//   "Fang",
-//   "Joe"
-// ];
-// console.log(countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }));
